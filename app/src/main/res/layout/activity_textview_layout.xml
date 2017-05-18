@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    //文本显示 与 OC 中的UIlabel 类似
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:text="普通文字显示"
+        android:background="#cfcccc"/>
+
+
+    <TextView
+        android:id="@+id/textView_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="25sp"
+        android:text="带有电话:123456780 email:123@qq.com 网址:http://www.chuliangliang.com"
+        android:autoLink="all"
+        android:layout_marginTop="20dp"
+        android:background="#fae017"
+        android:textColor="#222"
+        android:linksClickable="true"
+        />
+
+    <TextView
+        android:id="@+id/textView_customLink"
+        android:textColor="#fff"
+        android:text="自定义文字链接:我是链接一, 链接二: 我是链接二"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="#f16a48"
+        />
+
+</LinearLayout>

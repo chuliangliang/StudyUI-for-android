@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/root" xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_textView"
+        android:text="演示TextView(文本显示控件)"
+        android:textAllCaps="false"
+        android:onClick="btn_TextView"
+        />
+
+    <Button
+        android:id="@+id/button_editView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="演示EditView(文本输入框)"
+        android:onClick="btn_editView"
+        android:textAllCaps="false"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgView_id"
+        android:src="@drawable/talentimage"
+        />
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressView"
+
+        />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressView_h"
+        android:progressTint="#0ce743"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:maxHeight="100dp"
+        android:max="100"
+        android:progress="50"
+        />
+
+    //弹出Alert对话框按钮
+    <Button
+        android:id="@+id/button_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="弹出AlertDialog"
+        android:onClick="btn_AlertDialog"
+        android:textAllCaps="false"
+        />
+
+    //弹出Alert对话框按钮 带有进度菊花的
+    <Button
+        android:id="@+id/button_alert_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="弹出ProgressDialog"
+        android:onClick="btn_progressDialog"
+        android:textAllCaps="false"
+        />
+
+</LinearLayout>
+
